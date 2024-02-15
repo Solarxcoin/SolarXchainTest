@@ -1,0 +1,1017 @@
+{
+	"info": {
+		"_postman_id": "a8fc76f7-4894-46cd-8616-f1a036c753c0",
+		"name": "blockchain-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WALLET",
+			"item": [
+				{
+					"name": "Create Wallet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DOMAIN_URL_WALLET}}/v1/wallets",
+							"host": [
+								"{{DOMAIN_URL_WALLET}}"
+							],
+							"path": [
+								"v1",
+								"wallets"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Wallet",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{DOMAIN_URL_WALLET}}/v1/wallets",
+									"host": [
+										"{{DOMAIN_URL_WALLET}}"
+									],
+									"path": [
+										"v1",
+										"wallets"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "2994"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Apr 2022 20:34:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"address\": \"808337e0198a6f7f30c18ff9d5b1447b4ca8af8e6602a55631be0718e2a1ef89\",\n        \"publicKey\": \"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF2cXduU3JTbHgxTGptK1VoU0dhYQphOE82YitGNU5vUzBWNjUwTHdvcDhVcHJFWXd5SkFaNTRvUXpkU1NEVkJBeUZHMThjejNESitCSmx3NXhYMURXCmVmblgrSWRRdGh4SjRBaE5Da3FHN09obnJGRkpWS2pwUjhnakw3TFJMTFJTODBydzU5Qmd2SGdISFF3NnV3YTkKR3RIUDJDcHNkblNFWHdaaEw3bVN2TStHbFVJNWt4OEVtTDZNMzN6czYyMlIzVkdUNU9KN1FmRkdnNG50cWVoOApYM2VDbGVSTzhwY3lWNXFzRVlVUGRqREYrMlhTeEVIV3JtRXNHRFhkSS85YnEyRFlMY0VSLzd2Tld3eGJxTEpuCnAxR291RDMycFQ3dU13eGxpQVNaT2ZzVG00RzBQUXVxYjNLMnhmSEVqNFZEQmQ3NEcwV0xiZEpncnNqL0hNQm0KVVFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==\",\n        \"privateKey\": \"LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQytyQ2RLdEtYSFV1T2IKNVNGSVpwcHJ3N3B2NFhrMmhMUlhyblF2Q2lueFNtc1JqRElrQm5uaWhETjFKSU5VRURJVWJYeHpQY01uNEVtWApEbkZmVU5aNStkZjRoMUMySEVuZ0NFMEtTb2JzNkdlc1VVbFVxT2xIeUNNdnN0RXN0Rkx6U3ZEbjBHQzhlQWNkCkREcTdCcjBhMGMvWUtteDJkSVJmQm1FdnVaSzh6NGFWUWptVEh3U1l2b3pmZk96cmJaSGRVWlBrNG50QjhVYUQKaWUycDZIeGZkNEtWNUU3eWx6SlhtcXdSaFE5Mk1NWDdaZExFUWRhdVlTd1lOZDBqLzF1cllOZ3R3UkgvdTgxYgpERnVvc21lblVhaTRQZmFsUHU0ekRHV0lCSms1K3hPYmdiUTlDNnB2Y3JiRjhjU1BoVU1GM3ZnYlJZdHQwbUN1CnlQOGN3R1pSQWdNQkFBRUNnZ0VCQUpNaUxUL01ucEJ0T2c0MmhiUmsySXlJQVBvTXQ0aUdadE95WHgxZGJuZ3YKd09kTmsvT1F1OFU3MXFseWY1VUMybUpCQ21PektVRkFKZ2xXcjgycGg1ZWdZRFA3MXlCd08rR1JCa0lHdUk5ZgoxNEIxU1d6MjJ1ejFWNUdiSHlhc0Q4YUY4ZGd3U0RXbk9YWUUxZDAwbWdCMEh6cmpvY2JXcXI3WklXMitlYWtQCjlmY2Zoa1gvVHpKOUs2Yi9PQjJFQ25pTkhPa3RrU1lwc1dCVDBhbW02V05kQnp0WGtUYStFakIvQUVKYXJNYzYKME10NzVXc2hxTVQreTZtNmZndzk1WjZLZHJLeEppb0tKdnBFbFIraVlSWWZKQXNvUzhvQjFNOTZ2emZnbmtVYwpGUXFDbzB3MlJybUg2SlAwdDVTT25WVWNhdXlTcFFFbWF3SGhyeG0xL0hFQ2dZRUE0TmpEbDYzRjJGNTNXckhCCk1SdDkwVU9yYlAvL21WRlZVSDF3ZDRxOHFndmJwc21HZkh5TjkvQTBscXhEQVlKeFByQ1BmcEZlZGU3OGh4NG0KNHAva21KcUFFZzk4ZzBUK2I2WlpTbFAzMTJEQzJiTW8yWTNxbms4c2REbjA2U2xNSEhoVDI1RFpqRG1WOW8vMQp4aU4vNSt4eGp3UnAyNU1UTTZ0WG9hMEVLS01DZ1lFQTJSYzlnYkY3K1VEZ2tRVm5nVVZCTmlpL0RNMTNkQWg4CjV3SnkzanM3aE5oSXVkY0Y4UUVRblRQeEVJSkNVbmFEblF3MG52WHMwR3lVWGRKSG9uWmJMczRqbGxPRmtoaEQKNlVhU0paNWxFa1I5eWdIQ2tRQlcyVjZ1N1l1eXQzZWlhN2JmU3preWgwS0dRbWlVRk9Ra3NOVVBZSCs4bVFQdgpVMXpCUFdMcG9Ic0NnWUFTRTd0ZDlYMmprS3k5NE82c1dRNTdoWnBCc0M5SGowOXhvalFwbUVEazF3RTQzcGp1ClowRXV2dVFyZlB3Q0lnK2l2NlU1d3N3NlpSVnVjNUVpeFVJbXRyMDNOb0dIT0VQUWpDby9uSktmZ1VzSkg2dFkKR2wzVGpuLy9kQzFwbFlWbUFKS1ZZNGJxRERNdldKR2s5WE95SE1OZ2dUVlZqdlNMUWVwUXVFMU9Td0tCZ0RCQgpva0o2R1h6R2x5U2xkdVNkYUdtSmxTNWJYZnBGQ0w2eEpLZVJzeUZNa3AzODFpMUVkMVQ2ZnRPVW9QbURycTN5ClVLQWxPb2I2RytEZkpWMVB3ZVVkblh1RkJXUDhVTnhCKzZxeEV2YUVreEdjWW91bzc2VlNEc0J2RlVNRExPK1UKcnY0aHNNR3dYL2ZURjFldGZ4cHZ3Z05KWWJzQnpPbFM3UUdnUXg2UkFvR0FmeFlaeS9zeE41WmNXMVQ5Rm1PRQpyd0ZaU05zSld6Snp3SGxhMnFINmdpVmUrRjlSSlByYlgzNzRLY0lkblJPa3l0OUpZM25ySGZEcW9wZnN2dWw2CnkweUFjaGcvOURTWDNEOE5meXF3MmNsWFN3aXBOWmd1M3pxQ2l1OXdkNEFoWDN1Z2Rza0hmUSs2TGxBVmFTWkoKU3JpZFR0QllBSmhlYlFSdThRNHFZUW89Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Wallet Address",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"publicKey\": \"-----BEGIN PUBLIC KEY-----\\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwVS0fnsIWgbEkM1yjPya\\nwebgWdZepiZhWeNpD4hzmQPC2lDOgYxQCppef+kF5cjEiQx16n+MV/oymgzyBxIX\\nPBNj9JYp6Z6MTUSSzXtNOb0Hk9IvqBN/R3ePL0YYJHWESZGx5xxgUGn4GlMo4bLd\\nhqOVCOPQOawxgutHANktwEpKRqARal9MQMWcHfS8OH8dq9dWvxviIeaToI4mGsyY\\nzBS5vJaBZ6h/9Hnfb1drQnNbIQLU6+pk7IaQlYnLdeGnr5NY1rFhqIKFfPlcKwno\\nccTIKTCBY+0MwkhIV8QcZZbZbSj6m59tlF5X5BqPepZ4lpgWn2GwMhVwz0tifrep\\nuwIDAQAB\\n-----END PUBLIC KEY-----\\n\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DOMAIN_URL_WALLET}}/v1/wallets/address",
+							"host": [
+								"{{DOMAIN_URL_WALLET}}"
+							],
+							"path": [
+								"v1",
+								"wallets",
+								"address"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Wallet Address",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"publicKey\": \"-----BEGIN PUBLIC KEY-----\\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwVS0fnsIWgbEkM1yjPya\\nwebgWdZepiZhWeNpD4hzmQPC2lDOgYxQCppef+kF5cjEiQx16n+MV/oymgzyBxIX\\nPBNj9JYp6Z6MTUSSzXtNOb0Hk9IvqBN/R3ePL0YYJHWESZGx5xxgUGn4GlMo4bLd\\nhqOVCOPQOawxgutHANktwEpKRqARal9MQMWcHfS8OH8dq9dWvxviIeaToI4mGsyY\\nzBS5vJaBZ6h/9Hnfb1drQnNbIQLU6+pk7IaQlYnLdeGnr5NY1rFhqIKFfPlcKwno\\nccTIKTCBY+0MwkhIV8QcZZbZbSj6m59tlF5X5BqPepZ4lpgWn2GwMhVwz0tifrep\\nuwIDAQAB\\n-----END PUBLIC KEY-----\\n\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{DOMAIN_URL_WALLET}}/v1/wallets/address",
+									"host": [
+										"{{DOMAIN_URL_WALLET}}"
+									],
+									"path": [
+										"v1",
+										"wallets",
+										"address"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "87"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 03:50:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"address\": \"39b402f1a7e0c60578020f54581f3dfc450225406f19bf7b7684b908a0404794\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "TRANSACTION",
+			"item": [
+				{
+					"name": "Create Transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"transaction\": {\n            \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n            \"receiver\": \"23b2e9936baf56016771b1169823302aa5bb474c7a4d1d8ec817c1c428bd8d58\",\n            \"transactionValue\": 1,\n            \"feeValue\": 0,\n            \"message\": \"some message\"\n        },\n        \"validation\": {\n            \"signature\": \"a+/xrRkagzF+yhPfntQk0r7uWhsq2XixKB5krka+mUuKN8G9in/j+gXody7d/acns7k3bkKkxPkQsoNegHMf564c6fhbjV36KArPJCvBM5HiCaAgw4iSwp6KZqiyqm6Ofb4rsaQ0lTBz20avdPCbLKfg0rY462pUfddT+I7CpW1p2Dr1OCarsyy4ADFIWFwNj7/2p1MQdOfcrP+VOx+x64hTWAxZDil/U2mTxugpRxtl8ZD+N2KP8a8G5RfUM+PfRSeGkplm62JZts/cDTZ7Vr0Zu3YdOKYD8mIzuzUokBIdnCvERAGPtR40nubqaInD5UzCeP3jBX2wOq8earKA2w==\",\n            \"publicKey\": \"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4T3VjM2pJaVQwYzZoSDJMVzc4QQpNdVl2Q0hIeTlQeUtJVUVBSCtZaThrVHB1SklDcjBIZ2hBaGZacG5vajltNVJzaGVuYUo5MUxxOG94T0tDNmkzCi8xQU1KY0I0S052YVBnbEVNYnF1dmpYdU5aQTRSWEJ1WHdvbGxuRE1La3RGUjNGSlh1dWw4VTBtM2ZHa0xKUTcKZ3hlM2MyUHlYK0phUEFhNmNGYkI4VFM5L0pmLzNKRlJhTWV3L2RhS0NmZW5VZ3Vic1hGNldWK1dvSXloeSs0VApudktHWkRYaXV6dEFpNkFrL2w0WU1zN0h0d0tha3d5WjN5MjdVMjBBMDU3aUJjUGVHUWV3UlVoVCtkRUFrV3hYCmZqeldaTTZ4eUw3UnFYRmJWNWJUSzYrK3dqRk11aTN5bWptT2xLb0FvSFJNaVdnZGowNlhqSWttZThWZWxiWHMKUVFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DOMAIN_URL_TRANSACTION}}/v1/transactions",
+							"host": [
+								"{{DOMAIN_URL_TRANSACTION}}"
+							],
+							"path": [
+								"v1",
+								"transactions"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Transaction",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"transaction\": {\n            \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n            \"receiver\": \"23b2e9936baf56016771b1169823302aa5bb474c7a4d1d8ec817c1c428bd8d58\",\n            \"transactionValue\": 1,\n            \"feeValue\": 0,\n            \"message\": \"some message\"\n        },\n        \"validation\": {\n            \"signature\": \"a+/xrRkagzF+yhPfntQk0r7uWhsq2XixKB5krka+mUuKN8G9in/j+gXody7d/acns7k3bkKkxPkQsoNegHMf564c6fhbjV36KArPJCvBM5HiCaAgw4iSwp6KZqiyqm6Ofb4rsaQ0lTBz20avdPCbLKfg0rY462pUfddT+I7CpW1p2Dr1OCarsyy4ADFIWFwNj7/2p1MQdOfcrP+VOx+x64hTWAxZDil/U2mTxugpRxtl8ZD+N2KP8a8G5RfUM+PfRSeGkplm62JZts/cDTZ7Vr0Zu3YdOKYD8mIzuzUokBIdnCvERAGPtR40nubqaInD5UzCeP3jBX2wOq8earKA2w==\",\n            \"publicKey\": \"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4T3VjM2pJaVQwYzZoSDJMVzc4QQpNdVl2Q0hIeTlQeUtJVUVBSCtZaThrVHB1SklDcjBIZ2hBaGZacG5vajltNVJzaGVuYUo5MUxxOG94T0tDNmkzCi8xQU1KY0I0S052YVBnbEVNYnF1dmpYdU5aQTRSWEJ1WHdvbGxuRE1La3RGUjNGSlh1dWw4VTBtM2ZHa0xKUTcKZ3hlM2MyUHlYK0phUEFhNmNGYkI4VFM5L0pmLzNKRlJhTWV3L2RhS0NmZW5VZ3Vic1hGNldWK1dvSXloeSs0VApudktHWkRYaXV6dEFpNkFrL2w0WU1zN0h0d0tha3d5WjN5MjdVMjBBMDU3aUJjUGVHUWV3UlVoVCtkRUFrV3hYCmZqeldaTTZ4eUw3UnFYRmJWNWJUSzYrK3dqRk11aTN5bWptT2xLb0FvSFJNaVdnZGowNlhqSWttZThWZWxiWHMKUVFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==\"\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{DOMAIN_URL_TRANSACTION}}/v1/transactions",
+									"host": [
+										"{{DOMAIN_URL_TRANSACTION}}"
+									],
+									"path": [
+										"v1",
+										"transactions"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "56"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 03:40:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"uuid\": \"bb92af9c-6652-4616-ac03-ff01c14476df\"\n    }\n}"
+						},
+						{
+							"name": "Create Transaction - Error with insufficient coins",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"transaction\": {\n            \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n            \"receiver\": \"23b2e9936baf56016771b1169823302aa5bb474c7a4d1d8ec817c1c428bd8d58\",\n            \"transactionValue\": 1,\n            \"feeValue\": 0,\n            \"message\": \"some message\"\n        },\n        \"validation\": {\n            \"signature\": \"a+/xrRkagzF+yhPfntQk0r7uWhsq2XixKB5krka+mUuKN8G9in/j+gXody7d/acns7k3bkKkxPkQsoNegHMf564c6fhbjV36KArPJCvBM5HiCaAgw4iSwp6KZqiyqm6Ofb4rsaQ0lTBz20avdPCbLKfg0rY462pUfddT+I7CpW1p2Dr1OCarsyy4ADFIWFwNj7/2p1MQdOfcrP+VOx+x64hTWAxZDil/U2mTxugpRxtl8ZD+N2KP8a8G5RfUM+PfRSeGkplm62JZts/cDTZ7Vr0Zu3YdOKYD8mIzuzUokBIdnCvERAGPtR40nubqaInD5UzCeP3jBX2wOq8earKA2w==\",\n            \"publicKey\": \"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4T3VjM2pJaVQwYzZoSDJMVzc4QQpNdVl2Q0hIeTlQeUtJVUVBSCtZaThrVHB1SklDcjBIZ2hBaGZacG5vajltNVJzaGVuYUo5MUxxOG94T0tDNmkzCi8xQU1KY0I0S052YVBnbEVNYnF1dmpYdU5aQTRSWEJ1WHdvbGxuRE1La3RGUjNGSlh1dWw4VTBtM2ZHa0xKUTcKZ3hlM2MyUHlYK0phUEFhNmNGYkI4VFM5L0pmLzNKRlJhTWV3L2RhS0NmZW5VZ3Vic1hGNldWK1dvSXloeSs0VApudktHWkRYaXV6dEFpNkFrL2w0WU1zN0h0d0tha3d5WjN5MjdVMjBBMDU3aUJjUGVHUWV3UlVoVCtkRUFrV3hYCmZqeldaTTZ4eUw3UnFYRmJWNWJUSzYrK3dqRk11aTN5bWptT2xLb0FvSFJNaVdnZGowNlhqSWttZThWZWxiWHMKUVFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==\"\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{DOMAIN_URL_TRANSACTION}}/v1/transactions",
+									"host": [
+										"{{DOMAIN_URL_TRANSACTION}}"
+									],
+									"path": [
+										"v1",
+										"transactions"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "243"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Apr 2022 15:32:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"code\": \"BLOCKCHAIN_DOMAIN_INVALID_TRANSACTION_REQUEST_ERROR\",\n            \"error\": \"BLOCKCHAIN_DOMAIN_INVALID_TRANSACTION_REQUEST_ERROR\",\n            \"message\": \"Invalid transaction request\",\n            \"errorData\": {\n                \"coinBalance\": 0,\n                \"coinToTransfer\": 1,\n                \"coinShortage\": 1\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "EXCHANGE",
+			"item": [
+				{
+					"name": "Buy Coin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"address\": \"20d772b858f4512ea9902b52ffe13fa90f48a9dc26611faebcb31c1640b8ec05\",\n        \"coinsToBuy\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/coins/buy",
+							"host": [
+								"{{DOMAIN_URL_EXCHANGE}}"
+							],
+							"path": [
+								"v1",
+								"coins",
+								"buy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Buy Coin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"address\": \"20d772b858f4512ea9902b52ffe13fa90f48a9dc26611faebcb31c1640b8ec05\",\n        \"coinsToBuy\": 1\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/coins/buy",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"coins",
+										"buy"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "189"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 30 Apr 2022 09:59:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"transactionUUID\": \"81fb1448-e40a-4eed-96cc-3c496c418f40\",\n        \"message\": \"Purchased coins will show in your balance in few minutes.\",\n        \"purchaseSummary\": {\n            \"coinsPurchased\": 1,\n            \"feeCoins\": 0\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get fee to buy coin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/coins/buy-coin-fee",
+							"host": [
+								"{{DOMAIN_URL_EXCHANGE}}"
+							],
+							"path": [
+								"v1",
+								"coins",
+								"buy-coin-fee"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get fee to buy coin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/coins/buy-coin-fee",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"coins",
+										"buy-coin-fee"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "22"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 30 Apr 2022 09:47:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"feeCoin\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get latest mined blocks summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/blocks/mined-summary",
+							"host": [
+								"{{DOMAIN_URL_EXCHANGE}}"
+							],
+							"path": [
+								"v1",
+								"blocks",
+								"mined-summary"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get latest mined blocks summary",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/blocks/mined-summary",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"blocks",
+										"mined-summary"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "642"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 01 May 2022 14:17:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"blocks\": [\n            {\n                \"index\": 6,\n                \"coins\": 138,\n                \"numberOfTransactions\": 3,\n                \"timestamp\": \"2022-04-30T14:18:06.571Z\"\n            },\n            {\n                \"index\": 5,\n                \"coins\": 129.0001,\n                \"numberOfTransactions\": 3,\n                \"timestamp\": \"2022-04-30T14:10:33.192Z\"\n            },\n            {\n                \"index\": 4,\n                \"coins\": 131,\n                \"numberOfTransactions\": 4,\n                \"timestamp\": \"2022-04-30T13:31:30.312Z\"\n            },\n            {\n                \"index\": 3,\n                \"coins\": 129,\n                \"numberOfTransactions\": 2,\n                \"timestamp\": \"2022-04-30T13:31:02.641Z\"\n            },\n            {\n                \"index\": 2,\n                \"coins\": 129,\n                \"numberOfTransactions\": 2,\n                \"timestamp\": \"2022-04-30T09:59:30.121Z\"\n            },\n            {\n                \"index\": 1,\n                \"coins\": 129,\n                \"numberOfTransactions\": 2,\n                \"timestamp\": \"2022-04-30T09:57:01.472Z\"\n            },\n            {\n                \"index\": 0,\n                \"coins\": 128,\n                \"numberOfTransactions\": 2,\n                \"timestamp\": \"2022-04-29T17:42:00.721Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get latest mined transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/transactions/mempool/mined-transactions",
+							"host": [
+								"{{DOMAIN_URL_EXCHANGE}}"
+							],
+							"path": [
+								"v1",
+								"transactions",
+								"mempool",
+								"mined-transactions"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get latest mined transactions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/transactions/mempool/mined-transactions",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"transactions",
+										"mempool",
+										"mined-transactions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "4273"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 01 May 2022 14:37:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"transactions\": [\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-30T14:17:55.499Z\",\n                \"minedAt\": \"2022-04-30T14:18:06.586Z\",\n                \"transaction\": {\n                    \"uuid\": \"2fdb6b31-1ea0-4229-96bd-c9a43cd14a44\",\n                    \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"receiver\": \"ecdb7d2d92c462bf19be9e7462320c35563b230babf0d8cbe8c01cb1b6b40bfc\",\n                    \"transactionValue\": 9.9999,\n                    \"feeValue\": 0.0001,\n                    \"rewardValue\": 0,\n                    \"message\": \"Buying coin from exchange\",\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-30T14:17:55.497Z\"\n                }\n            },\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-30T14:10:26.081Z\",\n                \"minedAt\": \"2022-04-30T14:10:33.217Z\",\n                \"transaction\": {\n                    \"uuid\": \"c97d3020-9662-4389-84b0-ff458987f569\",\n                    \"sender\": \"ecdb7d2d92c462bf19be9e7462320c35563b230babf0d8cbe8c01cb1b6b40bfc\",\n                    \"receiver\": \"b465fdcdfaa27a010bb97f522988ac6a2a8f424c5e3be8081adb7c1ba68419d6\",\n                    \"transactionValue\": 1,\n                    \"feeValue\": 0.0001,\n                    \"rewardValue\": 0,\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-30T14:10:26.077Z\"\n                }\n            },\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-30T13:31:15.430Z\",\n                \"minedAt\": \"2022-04-30T13:31:30.318Z\",\n                \"transaction\": {\n                    \"uuid\": \"ee51a4d6-3ffe-4d76-b209-45288495a94e\",\n                    \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"receiver\": \"ecdb7d2d92c462bf19be9e7462320c35563b230babf0d8cbe8c01cb1b6b40bfc\",\n                    \"transactionValue\": 1,\n                    \"feeValue\": 0,\n                    \"rewardValue\": 0,\n                    \"message\": \"Buying coin from exchange\",\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-30T13:31:15.430Z\"\n                }\n            },\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-30T13:31:13.747Z\",\n                \"minedAt\": \"2022-04-30T13:31:30.318Z\",\n                \"transaction\": {\n                    \"uuid\": \"2f5e8f71-c49b-4628-b58e-81f278dae68d\",\n                    \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"receiver\": \"ecdb7d2d92c462bf19be9e7462320c35563b230babf0d8cbe8c01cb1b6b40bfc\",\n                    \"transactionValue\": 1,\n                    \"feeValue\": 0,\n                    \"rewardValue\": 0,\n                    \"message\": \"Buying coin from exchange\",\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-30T13:31:13.747Z\"\n                }\n            },\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-30T13:31:11.642Z\",\n                \"minedAt\": \"2022-04-30T13:31:30.318Z\",\n                \"transaction\": {\n                    \"uuid\": \"a1201b71-105a-4e31-8509-5b624fd54330\",\n                    \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"receiver\": \"ecdb7d2d92c462bf19be9e7462320c35563b230babf0d8cbe8c01cb1b6b40bfc\",\n                    \"transactionValue\": 1,\n                    \"feeValue\": 0,\n                    \"rewardValue\": 0,\n                    \"message\": \"Buying coin from exchange\",\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-30T13:31:11.641Z\"\n                }\n            },\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-30T13:30:50.398Z\",\n                \"minedAt\": \"2022-04-30T13:31:02.667Z\",\n                \"transaction\": {\n                    \"uuid\": \"aa2e7aa4-8214-4ef9-99bc-6b4b91c78671\",\n                    \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"receiver\": \"ecdb7d2d92c462bf19be9e7462320c35563b230babf0d8cbe8c01cb1b6b40bfc\",\n                    \"transactionValue\": 1,\n                    \"feeValue\": 0,\n                    \"rewardValue\": 0,\n                    \"message\": \"Buying coin from exchange\",\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-30T13:30:50.395Z\"\n                }\n            },\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-30T09:59:16.041Z\",\n                \"minedAt\": \"2022-04-30T09:59:30.126Z\",\n                \"transaction\": {\n                    \"uuid\": \"81fb1448-e40a-4eed-96cc-3c496c418f40\",\n                    \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"receiver\": \"20d772b858f4512ea9902b52ffe13fa90f48a9dc26611faebcb31c1640b8ec05\",\n                    \"transactionValue\": 1,\n                    \"feeValue\": 0,\n                    \"rewardValue\": 0,\n                    \"message\": \"Buying coin from exchange\",\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-30T09:59:16.040Z\"\n                }\n            },\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-30T09:56:50.167Z\",\n                \"minedAt\": \"2022-04-30T09:57:01.498Z\",\n                \"transaction\": {\n                    \"uuid\": \"498244d7-07e5-449d-aa8c-20492ef6ccec\",\n                    \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"receiver\": \"20d772b858f4512ea9902b52ffe13fa90f48a9dc26611faebcb31c1640b8ec05\",\n                    \"transactionValue\": 1,\n                    \"feeValue\": 0,\n                    \"rewardValue\": 0,\n                    \"message\": \"Buying coin from exchange\",\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-30T09:56:50.163Z\"\n                }\n            },\n            {\n                \"status\": \"MINED\",\n                \"timestamp\": \"2022-04-29T17:41:39.335Z\",\n                \"minedAt\": \"2022-04-29T17:42:00.730Z\",\n                \"transaction\": {\n                    \"uuid\": \"752d91a7-beb4-48c0-a7f1-45cd7689761c\",\n                    \"sender\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"receiver\": \"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca\",\n                    \"transactionValue\": 0,\n                    \"feeValue\": 0,\n                    \"rewardValue\": 0,\n                    \"message\": \"GENESIS TRANSACTION\",\n                    \"transactionType\": \"COIN_TRANSACTION\",\n                    \"timestamp\": \"2022-04-29T17:41:39.330Z\"\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Block by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/blocks/0",
+							"host": [
+								"{{DOMAIN_URL_EXCHANGE}}"
+							],
+							"path": [
+								"v1",
+								"blocks",
+								"0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Block by Id - Not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/blocks/0",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"blocks",
+										"0"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "170"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 28 Mar 2022 16:23:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"code\": \"BLOCKCHAIN_DOMAIN_BLOCK_NOT_FOUND_ERROR\",\n            \"error\": \"BLOCKCHAIN_DOMAIN_BLOCK_NOT_FOUND_ERROR\",\n            \"message\": \"Block not found\",\n            \"errorData\": {\n                \"blockIndex\": 0\n            }\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get Block by Id - Block 0",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/blocks/0",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"blocks",
+										"0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "926"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 03:47:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"block\": {\n            \"index\": 0,\n            \"nonce\": 112604,\n            \"timestamp\": \"2022-03-29T03:40:32.590Z\",\n            \"previousHash\": \"0\",\n            \"hash\": \"0000962dd779a573c48a26ca784593c122cb947900f0f5a2039bf344859116c3\",\n            \"transactions\": [\n                {\n                    \"uuid\": \"bb92af9c-6652-4616-ac03-ff01c14476df\",\n                    \"sender\": \"string\",\n                    \"receiver\": \"string\",\n                    \"transactionValue\": 0.9999,\n                    \"feeValue\": 0.0001,\n                    \"rewardValue\": 0,\n                    \"message\": \"string\",\n                    \"timestamp\": \"2022-03-29T03:40:17.781Z\"\n                },\n                {\n                    \"uuid\": \"92932c12-89a5-4ff9-8b96-c5d2b733371a\",\n                    \"sender\": \"ROOT_COIN_SOURCE\",\n                    \"receiver\": \"655335e90eafabe3a7441703cd0ed55d4d471c968e88364bfa85462724981202\",\n                    \"transactionValue\": 0,\n                    \"feeValue\": 0,\n                    \"rewardValue\": 128,\n                    \"message\": \"Reward coin\",\n                    \"timestamp\": \"2022-03-29T03:40:30.013Z\"\n                },\n                {\n                    \"uuid\": \"28113bb6-736e-442c-9495-280ae42ef839\",\n                    \"sender\": \"string\",\n                    \"receiver\": \"655335e90eafabe3a7441703cd0ed55d4d471c968e88364bfa85462724981202\",\n                    \"transactionValue\": 0,\n                    \"feeValue\": 0.0001,\n                    \"rewardValue\": 0,\n                    \"message\": \"Fee coin\",\n                    \"timestamp\": \"2022-03-29T03:40:30.014Z\"\n                }\n            ]\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get statistics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/blocks/statistics",
+							"host": [
+								"{{DOMAIN_URL_EXCHANGE}}"
+							],
+							"path": [
+								"v1",
+								"blocks",
+								"statistics"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get statistics",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/blocks/statistics",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"blocks",
+										"statistics"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "89"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 01 May 2022 19:21:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"statistics\": {\n            \"totalNumberOfBlocksMined\": 110,\n            \"sizeOfBlockchainInBytes\": 857533\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Mempool",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/transactions/mempool",
+							"host": [
+								"{{DOMAIN_URL_EXCHANGE}}"
+							],
+							"path": [
+								"v1",
+								"transactions",
+								"mempool"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Mempool",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/transactions/mempool",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"transactions",
+										"mempool"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "347"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 03:52:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"transactions\": [\n            {\n                \"uuid\": \"3186fc6d-ba57-48ee-b5ff-942752a34381\",\n                \"sender\": \"39b402f1a7e0c60578020f54581f3dfc450225406f19bf7b7684b908a0404794\",\n                \"receiver\": \"39b402f1a7e0c60578020f54581f3dfc450225406f19bf7b7684b908a0404794\",\n                \"transactionValue\": 0.9999,\n                \"feeValue\": 0.0001,\n                \"rewardValue\": 0,\n                \"message\": \"string\",\n                \"timestamp\": \"2022-03-29T03:52:13.628Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Address Coin Balance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/address/20d772b858f4512ea9902b52ffe13fa90f48a9dc26611faebcb31c1640b8ec05/coin-balance",
+							"host": [
+								"{{DOMAIN_URL_EXCHANGE}}"
+							],
+							"path": [
+								"v1",
+								"address",
+								"20d772b858f4512ea9902b52ffe13fa90f48a9dc26611faebcb31c1640b8ec05",
+								"coin-balance"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Address Coin Balance",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{DOMAIN_URL_EXCHANGE}}/v1/address/1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca/coin-balance",
+									"host": [
+										"{{DOMAIN_URL_EXCHANGE}}"
+									],
+									"path": [
+										"v1",
+										"address",
+										"1ed3c3663cd6fb1bd8d12ae7cd1df7436ed250ae5241ed92a4b546fc868a2dca",
+										"coin-balance"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "72"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Apr 2022 17:45:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"totalCoinsSent\": 0,\n        \"totalCoinsReceived\": 128,\n        \"coinBalance\": 128\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

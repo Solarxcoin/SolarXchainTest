@@ -1,0 +1,32 @@
+{
+  "$id": "createKeyPairResponse",
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "address",
+        "publicKey",
+        "privateKey"
+      ],
+      "properties": {
+        "address": {
+          "type": "string",
+          "description": "This is the address and it will be using in transactions."
+        },
+        "publicKey": {
+          "type": "string",
+          "description": "This is the base64 encoded public key."
+        },
+        "privateKey": {
+          "type": "string",
+          "description": "This is the base64 encoded private key. Do not share this with any one."
+        }
+      }
+    }
+  }
+}

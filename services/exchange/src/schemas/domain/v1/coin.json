@@ -1,0 +1,5 @@
+{
+  "$id": "coin",
+  "type": "number",
+  "multipleOfPrecision": 0.0001
+}
